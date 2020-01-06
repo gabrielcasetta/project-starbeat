@@ -46,24 +46,3 @@ input[type="color"] {
     margin-right: 0px!important;
     padding: 0px 10px;
 }
-
-/* about */
-#about-app {
-    padding-top: 50px;
-    text-align: center;
-}
-.about-title {
-    margin: 15px 0px;
-    text-align: center;
-}
-.about-version {
-    color: #888888;
-}
-
-/* supported-device */
-.supported-devices-list {
-    text-align: center;
-}
-.supported-devices-list figure {
-    display: inline-block;
-}
