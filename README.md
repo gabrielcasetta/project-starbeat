@@ -1,6 +1,7 @@
 # Project: STAR BEAT!
 
 An unofficial control center for Tongfang laptops on Linux/MacOS.
+<br>
 Link to the original made by @kirainmoe: https://github.com/kirainmoe/project-starbeat
 
 # Early Stage
