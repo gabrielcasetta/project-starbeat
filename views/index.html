@@ -5,17 +5,15 @@
     <link rel="stylesheet" type="text/css" href="./assets/material-icons.css">
     <link rel="stylesheet" type="text/css" href="./assets/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/starbeat.css">
-    <title>STAR BEAT!</title>
+    <title>Controlador de teclado</title>
 </head>
 
 <body>
     <nav class="nav-extended blue lighten-1">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo app-title">STAR BEAT! <p class="app-description">Tongfang Control Center</p></a>
-        </div>
+
         <div class="nav-content">
             <ul class="tabs tabs-transparent">
-                <li class="tab"><a class="active" href="#keyboard-light">Keyboard light control</a></li>
+                <li class="tab"><a class="active" href="#keyboard-light">Personalize as luzes do seu teclado</a></li>
             </ul>
         </div>
     </nav>
@@ -23,15 +21,15 @@
     <div id="keyboard-light" class="tab-body col s12">
         <div class="input-field">
             <select id="color-mode">
-                <option value="0" disabled selected>Select color mode</option>
-                <option value="1">monoColor</option>
+                <option value="0" disabled selected>Selecione o modo</option>
+                <option value="1">monoCor</option>
                 <option value="2">breathing</option>
                 <option value="3">wave</option>
                 <option value="4">rainbow</option>
                 <option value="5">flash</option>
                 <option value="6">mix</option>
             </select>
-            <label>Keyboard light color mode</label>
+            <label>Modo de luz</label>
         </div>
         <div class="color-operation row">
             <div class="monoColor-preview col s6">
@@ -42,37 +40,37 @@
             </div>
             <div class="color-settings col s6">
                 <div class="switch inline-block">
-                    <label class="color-menu-title">Keyboard light switch</label>
+                    <label class="color-menu-title">Luzes</label>
                     <label>
-                        Shutdown
+                        Desligadas
                         <input id="keyboard-light-switch" type="checkbox" checked>
                         <span class="lever"></span>
-                        Turn On
+                        Ligadas
                     </label>
                 </div>
 
                 <div class="switch inline-block">
-                    <label class="color-menu-title">Direction</label>
+                    <label class="color-menu-title">Direção</label>
                     <label>
-                        left
+                        p/ esquerda
                         <input id="keyboard-light-direction" type="checkbox" checked>
                         <span class="lever"></span>
-                        right
+                        p/ direita
                     </label>
                 </div>
 
             </div>
             <div class="color-sliders row">
                 <div class="range-field col s6">
-                    Keyboard light brightness
+                    Brilho
                     <input type="range" id="keyboard-light-brightness" min="0" max="100" value="80" />
                 </div>
                 <div class="range-field col s6">
-                    Transformation speed
+                    Velocidade
                     <input type="range" id="keyboard-light-speed" min="0" max="100" value="60" />
                 </div>
             </div>
-            <a class="waves-effect waves-light btn apply">Application settings</a>
+            <a class="waves-effect waves-light btn apply">Aplicar</a>
         </div>
     </div>
 

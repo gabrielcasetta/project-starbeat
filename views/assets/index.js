@@ -9,10 +9,10 @@ const speeds = [0x0a, 0x07, 0x05, 0x03, 0x01];
 const initColorUtils = require('../colorUtils');
 const utils = initColorUtils();
 if (!utils) {
-    alert("A compatible device cannot be detected on the device. Please confirm that your system can recognize the ITE device and try again.");
+    alert("Não foi possível detectar um dispositivo compatível. Por favor verifique se seu sistema reconhece o dispositivo ITE e tente novamente.");
     document.getElementById('keyboard-light').innerHTML = `
-    <p> Your device is not supported. Please confirm that your system can recognize ITE Devices (8291) with manufacturer ID 0x048d and product ID 0xce00, and the version is 0.02. </ P>
-     <p> If you run this program under Linux, try running as root. </ p>
+    <p> Seu dispositivo não é compatível. Por favor confirme se seu sistema reconhece o dispositivo ITE (8291) fabricante ID 0x048d e product ID 0xce00, e a versão 0.02. </ p>
+     <p> Se esta rodando este programa no Linux, tente rodar como root. </ p>
     `;
 
 }
@@ -104,11 +104,11 @@ if (utils) {
     document.querySelector('.apply').addEventListener('click', () => {
         const value = document.getElementById('color-mode').value;
         if (value == 0) {
-            alert("Please choose an effective color mode ~");
+            alert("Por favor escolha um modo efetivo");
             return;
         }
         setIt(true);
-        alert("Settings have been saved ~");
+        alert("Aplicado com sucesso.");
     });
 
     document.querySelectorAll('input[type=range], input[type=checkbox]').forEach(ele => {
