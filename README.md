@@ -29,10 +29,13 @@ npm run pack
 
 #OBS: Talvez no linux você precise executar como sudo
 ```
-#Não suporta seu aparelho?
-Caso seu teclado seja do modelo ITE revision is 0.03 confira o projeto do @rodgomesc: https://github.com/rodgomesc/avell-unofficial-control-center.
+# Não suporta seu aparelho?
+<br>
+Caso seu teclado seja do modelo ITE revision 0.03 confira o projeto do @rodgomesc: https://github.com/rodgomesc/avell-unofficial-control-center.
 
-#Observações
+# Observações
+<br>
 Agradecimentos ao @kirainmoe: https://github.com/kirainmoe/project-starbeat
+<br>
 Desenvolvido com Electron e node-hid, Node.js/Javascriipt e Materialize UI Library
 Licença:MIT
