@@ -1,54 +1,38 @@
-# Project: STAR BEAT!
+# AVELL FOX 5 BS CONTROLADOR DO TECLADO PARA LINUX OU MACOS
 
-An unofficial control center for Tongfang laptops on Linux/MacOS.
-Link to the original made by @kirainmoe: https://github.com/kirainmoe/project-starbeat
+Um projeto não oficial, para controlar o teclado no Linux ou MacOS.
 
-# Early Stage
+Este projeto visa apenas controlar a luz e cores do teclado do meu AVELL FOX 5 BS mas caso o seu modelo tenha o teclado:
+ITE keyboard (vendor id 0x048d, device id 0xce00, ITE revision 0.02) há grandes chances de funcionar para o seu também.
 
-
-This project is on an early stage. There is little feature in this program, including keyboard light controlling. If you meet problems or you have some ideas, please open an issue and tell me.
-
-# Build & Run
-
-
-The program is powered by Electron.
-
-```shell
-# install dependencies
-npm install
-
-# start development environment(macOS)
-npm start
-# in Linux you may need to run with `sudo`
-
-# pack binary(macOS)
-npm run pack
-
-# pack binary(Linux)
-npm run pack:linux
-```
-
-# Supported Devices
-
-
-This program is designed for Hasee God-of-War models, but will theoretically work on those devices with ITE keyboard (vendor id 0x048d, device id 0xce00, ITE revision 0.02). The following are the models that are known to work:
-
+Modelos compatíveis:
+- Avell FOX 5 BS
+- TongFang GI5CN4E
 - Z7(m)-KP7/5(G)Z
 - Z7(m)-kP7/5EC
 
-# Not Support My Device?
+Como compilar & Executar
 
+Este programa é feito com Electron.
+```shell
+# instale as dependências
+npm install
 
-This program only support ITE controller with revision 0.02. If your ITE revision is 0.03, please use this CLI tool by @rodgomesc: https://github.com/rodgomesc/avell-unofficial-control-center ; if your ITE revision is 0.02 and vendor_id / product_id are correct, please open an issue to tell me.
+# execute o ambiente de desenvolvimento
+npm start
 
-# Other
+# (Linux) compilar
+npm run pack:linux
 
-- Powered by Electron and node-hid, written in Node.js/Javascriipt
-- Materialize UI Library
-- Thanks to [@rodgomesc](https://github.com/rodgomesc) for his inspiration and help
-- Thanks to the testing of KP7EC by QianBiXiangYang
-- Logo and project name are inspired from Poppin'Party
+# (macOS) compilar
+npm run pack
 
-# License
+#OBS: Talvez no linux você precise executar como sudo
+```
+#Não suporta seu aparelho?
+Caso seu teclado seja do modelo ITE revision is 0.03 confira o projeto do @rodgomesc: https://github.com/rodgomesc/avell-unofficial-control-center.
 
-Project: STAR BEAT! is MIT licensed.
+#Observações
+Agradecimentos ao @kirainmoe: https://github.com/kirainmoe/project-starbeat
+Desenvolvido com Electron e node-hid, Node.js/Javascriipt e Materialize UI Library
+Licença:MIT
